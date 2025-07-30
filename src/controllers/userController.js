@@ -1,4 +1,4 @@
-const UserModel = require('../models/userModel');
+const UserModel = require('../model/userModel');
 // Untuk password hashing, Anda bisa menggunakan bcrypt (npm install bcrypt)
 // Contoh sederhana tanpa hashing untuk demo
 
