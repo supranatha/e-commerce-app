@@ -6,6 +6,7 @@ app.use(express.json()); // Middleware untuk parsing JSON body
 
 // Rute untuk setiap modul
 const userRoutes = require('./routes/userRoutes');
+const userRoutes = require('./routes/transactionRoutes');
 
 
 // Rute dasar
@@ -14,6 +15,8 @@ app.get('/', (req, res) => {
 });
 
 app.use('/api/users', userRoutes);
+
+app.use('/api/transactions', transactionRoutes);
 
 
 const PORT = process.env.PORT || 3000;
